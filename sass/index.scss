@@ -1,0 +1,247 @@
+@charset "utf-8";
+// 普通变量：
+$width:1280px;
+$auto:0 auto;
+$font-size:12px;
+$font-weight:700;
+$left:left;
+$right:right;
+$color:#FE0000;
+
+@mixin borderstyle2($w, $s, $c) {
+  border-bottom: $w $s $c;
+}
+
+//通知栏样式：
+.notice {
+  width: $width;
+  height: 50px;
+  margin: 30px auto 0;
+  background: $color;
+  color: white;
+
+  a {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: $color;
+    font-size: 40px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+  }
+
+  .left,
+  .banner {
+    float: $left;
+  }
+
+  .right {
+    float: $right;
+  }
+}
+
+// 领券栏样式：
+.ticket {
+  width: $width;
+  margin: 24px auto 0;
+}
+
+// 商品轮播图样式：
+.goods-banner {
+  width: $width;
+  height: 606px;
+  margin: $auto;
+  position: relative;
+
+  .goods {
+    height: 570px;
+
+    a {
+      display: inline-block;
+      height: 570px;
+    }
+  }
+
+  .left,
+  .right {
+    color: #525252;
+    font-size: 50px;
+    position: absolute;
+    top: calc(50% - 50px);
+  }
+
+  .left {
+    left: -34px;
+  }
+
+  .right {
+    right: -34px;
+  }
+
+  ul {
+    width: 108px;
+    margin: 20px auto;
+
+    li {
+      width: 8px;
+      height: 8px;
+      background: #D1D1D1;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+
+    .active {
+      background: black;
+    }
+  }
+}
+
+// 活动栏样式：
+.activity {
+  width: $width;
+  height: 72px;
+  margin: 28px auto 24px;
+  display: flex;
+
+  .wrap {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: $font-weight;
+  }
+
+  li {
+    a {
+      font-size: 13px;
+      color: black;
+    }
+
+    ol {
+      li {
+        margin-left: 20px;
+        @include borderstyle2(2px, solid, #dadada)
+      }
+    }
+  }
+}
+
+// 楼梯栏楼梯样式：
+.hot {
+  width: $width;
+  height: 70px;
+  margin: 50px auto 0;
+}
+
+.sexing {
+
+  .women,
+  .men,
+  .kids,
+  .baby {
+    @include borderstyle2(3px, solid, #378694);
+    color: #1B1B1B;
+  }
+
+  ul {
+    width: $width;
+    height: 59px;
+    margin: $auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: $font-weight;
+    @include borderstyle2(1px, solid, #dadada);
+    line-height: 26px;
+    color: #ABABAB;
+    cursor: pointer;
+
+    li {
+      width: 320px;
+      text-align: center;
+    }
+  }
+}
+
+// 楼梯栏楼层样式：
+.type-clothes {
+  width: 1310px;
+  margin: 30px auto 0;
+  overflow: hidden;
+
+  ul {
+    overflow: hidden;
+
+    li {
+      width: 212px;
+      height: 401px;
+      padding: 10px;
+      margin: 0 15px 25px;
+
+      .logo {
+        width: 212px;
+        height: 23px;
+
+        img {
+          width: 62px;
+          height: 23px;
+          float: $right;
+        }
+      }
+
+      .pic {
+        width: 212px;
+        height: 222px;
+      }
+
+      ol {
+        height: 30px;
+        margin-top: 8px;
+
+        li {
+          width: 18.5px;
+          height: 18.5px;
+          padding: 5px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: $font-size;
+    color: #747474;
+    font-weight: $font-weight;
+    height: 26px;
+    line-height: 13px;
+    margin-bottom: 5px;
+  }
+
+  .type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price {
+    color: black;
+    font-size: 16px;
+    line-height: 31px;
+  }
+
+  .star {
+    font-size: $font-size;
+  }
+
+  .iconfont {
+    color: #EBBE00;
+    font-size: 12px;
+  }
+}
+
+@import "public";
+@import "nav";
+@import "title";
+@import "footer";

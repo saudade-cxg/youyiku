@@ -1,0 +1,254 @@
+@charset "utf-8";
+// 普通变量：
+$width:1280px;
+$auto:0 auto;
+$font-size:12px;
+$font-weight:700;
+$left:left;
+$right:right;
+$color:#FE0000;
+
+@mixin borderstyle1($w, $s, $c) {
+  border-right: $w $s $c;
+}
+
+@mixin borderstyle2($w, $s, $c) {
+  border-bottom: $w $s $c;
+}
+
+@mixin borderstyle3($w, $s, $c) {
+  border-left: $w $s $c;
+}
+
+/* 菜单导航栏背景样式 */
+.menubg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 0;
+}
+
+/* 标题栏样式 */
+.title {
+  width: $width;
+  height: 50px;
+  margin: $auto;
+  position: relative;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    float: $left;
+  }
+
+  .sex {
+    width: 753px;
+    background: white;
+    padding: 15px 0;
+    float: $left;
+
+    .active {
+      color: $color;
+    }
+
+    li {
+      height: 20px;
+      @include borderstyle1(1px, dashed, #000000);
+      font-size: 15px;
+      font-weight: $font-weight;
+      padding: 0 18px;
+      cursor: pointer;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  .info {
+    height: 50px;
+    float: $right;
+    background: #A1A1A1;
+
+    li {
+      height: 20px;
+      @include borderstyle1(1px, dashed, white);
+      font-size: 15px;
+      font-weight: $font-weight;
+      margin: 15px 0 0;
+      padding: 0 22px;
+      position: relative;
+
+      &:last-child {
+        height: 50px;
+        margin-top: 0;
+        line-height: 50px;
+        background: #666666;
+      }
+
+      .icon {
+        position: absolute;
+        color: $color;
+        font-size: 20px;
+        top: -10px;
+      }
+
+      #new1 {
+        right: 5px;
+      }
+
+      #new2 {
+        right: 30px;
+      }
+    }
+
+    .third {
+      padding: 0 44px;
+    }
+
+    .noborder {
+      border-right: none;
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+  .menu {
+    width: 1260px;
+    height: 570px;
+    background: white;
+    position: absolute;
+    top: 70px;
+    padding: 20px 10px;
+    display: none;
+    z-index: 10;
+
+    .iteam {
+      width: 315px;
+      height: 530px;
+      float: $left;
+
+      .type {
+        width: 315px;
+        height: 175px;
+
+        .clothes {
+          @include borderstyle2(1px, solid, #7F7F7F);
+          width: 280px;
+          height: 30px;
+          font-size: 14px;
+          font-weight: $font-weight;
+          line-height: 30px;
+        }
+
+        ul {
+          margin-top: 10px;
+
+          li {
+            position: relative;
+            margin-left: 8px;
+            width: 130px;
+
+            &:first-child {
+              @include borderstyle2(1px, solid, #7F7F7F);
+            }
+
+            a {
+              color: #7F7F7F;
+              font-size: $font-size;
+            }
+
+            .icon {
+              position: absolute;
+              top: 0;
+              left: 40px;
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        @include borderstyle3(1px, solid, #7F7F7F)
+      }
+
+      .activitys {
+        margin-left: 30px;
+
+        ul {
+          float: $left;
+          width: 280px;
+
+          li {
+            clear: both;
+            margin-top: 10px;
+
+            a {
+              color: black;
+              font-size: 14px;
+            }
+          }
+        }
+
+        ol {
+          float: $left;
+
+          li {
+            margin-right: 20px;
+            margin-top: 10px;
+            color: #7F7F7F;
+            font-size: $font-size;
+          }
+
+          .photo {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+
+    .jiantou {
+      border: 15px solid;
+      border-color: transparent transparent black;
+      position: absolute;
+      top: -30px;
+      display: none;
+    }
+
+    .jiantou1 {
+      left: 110px;
+    }
+
+    .jiantou2 {
+      left: 230px;
+    }
+
+    .jiantou3 {
+      left: 350px;
+    }
+
+    .jiantou4 {
+      left: 475px;
+    }
+
+    .del {
+      position: absolute;
+      color: $color;
+      font-size: 30px;
+      font-weight: $font-weight;
+      top: -33px;
+      right: 0px;
+      cursor: pointer;
+    }
+  }
+}

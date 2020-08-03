@@ -1,0 +1,67 @@
+@charset "utf-8";
+// 普通变量：
+$width:1280px;
+$auto:0 auto;
+$font-size:12px;
+$font-weight:700;
+$left:left;
+$right:right;
+
+@mixin borderstyle1($w, $s, $c) {
+  border-right: $w $s $c;
+}
+
+@mixin borderstyle2($w, $s, $c) {
+  border-bottom: $w $s $c;
+}
+
+// 导航栏样式：
+.nav {
+  width: $width;
+  margin: $auto;
+  height: 46px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    float: $left;
+    margin-top: 4px;
+    margin-left: $font-size;
+    display: none;
+  }
+
+  .search {
+    width: 250px;
+    height: 24px;
+    margin-top: 10px;
+    float: $right;
+    @include borderstyle2(1px, solid, #ABABAB);
+
+    input {
+      width: 230px;
+      float: $right;
+      margin-top: 5px;
+      border: none;
+      outline: none;
+    }
+  }
+
+  ul {
+    float: right;
+    padding: 15px 10px 18px;
+
+    li {
+      height: 13px;
+      text-align: center;
+      line-height: $font-size;
+      @include borderstyle1(1px,dashed ,#999999 );
+      padding: 0 10px;
+
+      a {
+        color: #1B1B1B;
+        font-size: $font-size;
+      }
+    }
+  }
+}

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>详情页</title>
+  <link rel="stylesheet" href="font/iconfont.css">
+  <link rel="stylesheet" href="css/details.css">
+  <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage"
+    currentmod="moddetails"></script>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <div class="nav">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="">
+    </div>
+    <div class="search">
+      <span class="iconfont icon-fangdajing"></span>
+      <input type="text" placeholder="站内搜索">
+    </div>
+    <ul>
+      <li><a href="registry.html">注册</a></li>
+      <li><a href="login.html">登录</a></li>
+      <li>
+        <span class="iconfont icon-zhanghu"></span>
+        <a href="javascript:;">帐户</a>
+      </li>
+      <li>
+        <span class="iconfont icon-xinaixin"></span>
+        <a href="javascript:;">收藏夹</a>
+      </li>
+      <li>
+        <span class="iconfont icon-gouwuche1"></span>
+        <a href="shopping.html">购物车</a>
+        <span class="iconfont icon-arrow"></span>
+      </li>
+      <li>
+        <span class="iconfont icon-youjian"></span>
+        <a href="javascript:;">站内信</a>
+      </li>
+      <li>
+        <span class="iconfont icon-kefu"></span>
+        <a href="javascript:;">联系客服</a>
+      </li>
+      <li>
+        <span class="iconfont icon-mendian-"></span>
+        <a href="javascript:;">门店购买</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 菜单导航背景 -->
+  <div class="menubg"></div>
+
+  <!-- 标题栏 -->
+  <div class="title">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="">
+    </div>
+    <div class="sex">
+      <ul>
+        <li>女 装 WOMEN</li>
+        <li>男 装 MEN</li>
+        <li>童 装 KIDS</li>
+        <li>婴 幼 儿 装 BABY</li>
+      </ul>
+    </div>
+    <ul class="info">
+      <li><a href="javascript:;">网上购买指南</a></li>
+      <li>
+        <svg class="icon" id="new1" aria-hidden="true">
+          <use xlink:href="#icon-new"></use>
+        </svg>
+        <a href="javascript:;">关注我们</a>
+      </li>
+      <li class="noborder third">
+        <svg class="icon" id="new2" aria-hidden="true">
+          <use xlink:href="#icon-new"></use>
+        </svg>
+        <a href="javascript:;">公告区</a>
+      </li>
+      <li class="noborder"><a href="javascript:;">店铺资料</a></li>
+    </ul>
+    <div class="menu">
+      <div class="jiantou jiantou1"></div>
+      <div class="del">x</div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>外套&针织衫</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">外套</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">针织衫</a>
+            </li>
+            <li>
+              <a href="list.html">防晒系列</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裤装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">牛仔裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">长裤</a>
+            </li>
+            <li>
+              <a href="list.html">九分裤·七分裤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裙装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">连衣裙</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">半身裙</a>
+            </li>
+            <li>
+              <a href="list.html">裙裤</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>衬衫&T恤</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">UT系列</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">衬衫</a>
+            </li>
+            <li>
+              <a href="list.html">T恤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>运动衫&运动裤</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动裤</a>
+            </li>
+            <li>
+              <a href="list.html">运动功能系列</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>孕妇装&亲子装</p>
+          </div>
+          <ul>
+            <li>
+              <a href="list.html">孕妇</a>
+            </li>
+            <li>
+              <a href="list.html">亲子装</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>内衣&内裤&袜子</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">文胸</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内衣</a>
+            </li>
+            <li>
+              <a href="list.html">舒美衣BRA IN ONE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>起居服&配件</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">起居服</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">泳装</a>
+            </li>
+            <li>
+              <a href="list.html">配件</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="activitys">
+          <ul>
+            <li>
+              <a href="list.html">新作商品</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">限时特优</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">特大/特小尺码</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">超U惠专区</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">UT特辑</a>
+            </li>
+            <li>
+              <a href="list.html">合作系列</a>
+            </li>
+            <li>
+              <a href="list.html">便利购物服务</a>
+            </li>
+            <li>
+              <a href="list.html">Today's Pick Up</a>
+            </li>
+          </ul>
+          <h4>特辑推荐</h4>
+          <ol>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg" alt="">
+              </div>
+              <p>运动功能系列</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg" alt="">
+              </div>
+              <p>无钢圈文胸特辑</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg" alt="">
+              </div>
+              <p>连衣裙</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg" alt="">
+              </div>
+              <p>衬衫</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="jiantou jiantou2"></div>
+      <div class="del">x</div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>外套&针织衫</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">外套</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">茄克大衣</a>
+            </li>
+            <li>
+              <a href="list.html">针织衫</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裤装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">牛仔裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">中裤·短裤</a>
+            </li>
+            <li>
+              <a href="list.html">九分裤·七分裤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>运动衫&运动裤</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动裤</a>
+            </li>
+            <li>
+              <a href="list.html">运动系列</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>衬衫</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">休闲衬衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">牛仔衬衫</a>
+            </li>
+            <li>
+              <a href="list.html">商务衬衫</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>T恤&背心</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">UT系列</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">POLO衫</a>
+            </li>
+            <li>
+              <a href="list.html">背心</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>亲子装</p>
+          </div>
+          <ul>
+            <li>
+              <a href="list.html">孕妇</a>
+            </li>
+            <li>
+              <a href="list.html">亲子装</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>内衣&内裤&袜子</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">袜子</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内衣</a>
+            </li>
+            <li>
+              <a href="list.html">舒美衣BRA IN ONE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>起居服&配件</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">起居服</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">泳装</a>
+            </li>
+            <li>
+              <a href="list.html">配件</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="activitys">
+          <ul>
+            <li>
+              <a href="list.html">新作商品</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">限时特优</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">特大/特小尺码</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">超U惠专区</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">UT特辑</a>
+            </li>
+            <li>
+              <a href="list.html">合作系列</a>
+            </li>
+            <li>
+              <a href="list.html">便利购物服务</a>
+            </li>
+            <li>
+              <a href="list.html">Today's Pick Up</a>
+            </li>
+          </ul>
+          <h4>特辑推荐</h4>
+          <ol>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg" alt="">
+              </div>
+              <p>运动功能系列</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg" alt="">
+              </div>
+              <p>无钢圈文胸特辑</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg" alt="">
+              </div>
+              <p>连衣裙</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg" alt="">
+              </div>
+              <p>衬衫</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="jiantou jiantou3"></div>
+      <div class="del">x</div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>童装外套</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">开衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">防晒衣</a>
+            </li>
+            <li>
+              <a href="list.html">羽绒服</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裤童装上装/p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">衬衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动衫</a>
+            </li>
+            <li>
+              <a href="list.html">连帽运动衫</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>童装内衣</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">背心</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">T恤</a>
+            </li>
+            <li>
+              <a href="list.html">全棉系列</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>男童裤装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">牛仔裤</a>
+            </li>
+            <li>
+              <a href="list.html">弹力裤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>男童家居/p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">男童内裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">男童袜子</a>
+            </li>
+            <li>
+              <a href="list.html">男童家居</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>亲子装</p>
+          </div>
+          <ul>
+            <li>
+              <a href="list.html">孕妇</a>
+            </li>
+            <li>
+              <a href="list.html">亲子装</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>女童裤装·裙装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">连衣裙</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">半身裙</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动裤</a>
+            </li>
+            <li>
+              <a href="list.html">紧身裤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>女童家居</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">女童家居</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">女童内裤</a>
+            </li>
+            <li>
+              <a href="list.html">女童袜子</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="activitys">
+          <ul>
+            <li>
+              <a href="list.html">新作商品</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">限时特优</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">特大/特小尺码</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">超U惠专区</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="list.html">UT特辑</a>
+            </li>
+            <li>
+              <a href="list.html">合作系列</a>
+            </li>
+            <li>
+              <a href="list.html">便利购物服务</a>
+            </li>
+            <li>
+              <a href="list.html">Today's Pick Up</a>
+            </li>
+          </ul>
+          <h4>特辑推荐</h4>
+          <ol>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg" alt="">
+              </div>
+              <p>运动功能系列</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg" alt="">
+              </div>
+              <p>无钢圈文胸特辑</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg" alt="">
+              </div>
+              <p>连衣裙</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg" alt="">
+              </div>
+              <p>衬衫</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="jiantou jiantou4"></div>
+      <div class="del">x</div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>外套&针织衫</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">外套</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">针织衫</a>
+            </li>
+            <li>
+              <a href="list.html">防晒系列</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裤装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">牛仔裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">长裤</a>
+            </li>
+            <li>
+              <a href="list.html">九分裤·七分裤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>裙装</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">连衣裙</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">半身裙</a>
+            </li>
+            <li>
+              <a href="list.html">裙裤</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>衬衫&T恤</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">UT系列</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">衬衫</a>
+            </li>
+            <li>
+              <a href="list.html">T恤</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>运动衫&运动裤</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动衫</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">运动裤</a>
+            </li>
+            <li>
+              <a href="list.html">运动功能系列</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>孕妇装&亲子装</p>
+          </div>
+          <ul>
+            <li>
+              <a href="list.html">孕妇</a>
+            </li>
+            <li>
+              <a href="list.html">亲子装</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="type">
+          <div class="clothes">
+            <p>内衣&内裤&袜子</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">文胸</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内裤</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">内衣</a>
+            </li>
+            <li>
+              <a href="list.html">舒美衣BRA IN ONE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="type">
+          <div class="clothes">
+            <p>起居服&配件</p>
+          </div>
+          <ul>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">起居服</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+              <a href="list.html">泳装</a>
+            </li>
+            <li>
+              <a href="list.html">配件</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="iteam">
+        <div class="activitys">
+          <ul>
+            <li>
+              <a href="javascript:;">新作商品</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="javascript:;">限时特优</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="javascript:;">特大/特小尺码</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="javascript:;">超U惠专区</a>
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-new"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="javascript:;">UT特辑</a>
+            </li>
+            <li>
+              <a href="javascript:;">合作系列</a>
+            </li>
+            <li>
+              <a href="javascript:;">便利购物服务</a>
+            </li>
+            <li>
+              <a href="javascript:;">Today's Pick Up</a>
+            </li>
+          </ul>
+          <h4>特辑推荐</h4>
+          <ol>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-1.jpg" alt="">
+              </div>
+              <p>运动功能系列</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-2.jpg" alt="">
+              </div>
+              <p>无钢圈文胸特辑</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-3.jpg" alt="">
+              </div>
+              <p>连衣裙</p>
+            </li>
+            <li>
+              <div class="photo">
+                <img src="https://www.uniqlo.cn/public/image/L1/2020/Header/Img/women/WTJ-4.jpg" alt="">
+              </div>
+              <p>衬衫</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 详情页栏 -->
+  <div class="wrap">
+    <div class="left">
+      <button><span class="iconfont icon-up3"></span></button>
+      <ul>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+        </li>
+      </ul>
+      <button><span class="iconfont icon-arrow"></span></button>
+    </div>
+    <div class="leftarrow">
+      <button>&lt;</button>
+    </div>
+    <div class="center1">
+      <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+    </div>
+    <div class="rightarrow">
+      <button>&gt;</button>
+    </div>
+    <div class="center2">
+      <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/main/first/1000/1.jpg" alt="">
+    </div>
+    <div class="right">
+      <div class="goods-title">男装 针织松紧短裤 424151</div>
+      <div class="goods">
+        <div>
+          <span class="goods-price1">¥99.00</span>
+        </div>
+        <div class="goods-price2">
+          <span>初上市价格：&nbsp;</span>
+          <span class="goods-price3">¥99.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span class="iconfont icon-wujiaoxing"></span>
+          <span class="iconfont icon-wujiaoxing"></span>
+          <span class="iconfont icon-wujiaoxing"></span>
+          <span class="iconfont icon-wujiaoxing"></span>
+          <span class="iconfont icon-wujiaoxing"></span>
+        </div>
+      </div>
+      <p>活动：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="color: #FF0000;">订单满200元免运费（门店急送订单除外）</span></p>
+      <p style="font-weight: 500;">颜色：</p>
+      <ul class="color">
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/chip/22/COL03.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/chip/22/COL62.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/chip/22/COL68.jpg" alt="">
+        </li>
+        <li>
+          <img src="https://www.uniqlo.cn/hmall/test/u0000000014413/chip/22/COL69.jpg" alt="">
+        </li>
+      </ul>
+      <p style="font-weight: 500;">尺码：</p>
+      <ul class="size">
+        <li>160/90/S</li>
+        <li>170/95/M/
+        </li>
+        <li>175/100/L/
+        </li>
+        <li>180/105/XL/
+        </li>
+      </ul>
+      <p style="font-weight: 500;">尺码表</p>
+      <div class="express">
+        配送方式：&nbsp;&nbsp;&nbsp;<input
+          type="radio">&nbsp;&nbsp;快递配送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+          type="radio">&nbsp;&nbsp;门店自提
+      </div>
+      <p>配送至：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>上海</span><span
+          class="iconfont icon-arrow"></span>&nbsp;&nbsp;快递<span>¥7.00</span></p>
+      <div class="gift">
+        <span>礼品包装选择：</span>
+        <span>礼品包装信息</span>
+      </div>
+      <div class="choose">不需要<span class="iconfont icon-sanjiaoxingshixin"></span></div>
+      <div class="number">
+        <span>数量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button>-&nbsp;&nbsp;</button>
+        <input type="text" value="1">
+        <button>&nbsp;&nbsp;+</button>
+        <span style="font-weight: 500;">&nbsp;&nbsp;&nbsp;&nbsp;库存充足</span>
+      </div>
+      <div class="buy">
+        <button><a href="shopping.html">立即购买</a></button>
+        <button style="background: #FF0000;"><span class="iconfont icon-gouwuche1"></span>添加至购物车</button>
+      </div>
+      <div class="share">
+        <span>支持30天无理由退换货</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="iconfont icon-zhuanfa"></span>
+        <span>分享商品</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="iconfont icon-aixinjiaguanzhu"></span>
+        <span>收藏</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部栏 -->
+  <div class="footer">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="">
+    </div>
+    <ul>
+      <li><a href="javascript:;">店铺资料</a></li>
+      <li><a href="javascript:;">招聘信息</a></li>
+      <li><a href="javascript:;">访问权限</a></li>
+      <li><a href="javascript:;">隐私权保护</a></li>
+    </ul>
+  </div>
+  <div class="last">
+    <p>迅销（中国）商贸有限公司 沪ICP备09003223号 沪公网安备 31010402000957号</p>
+    <div class="police1">
+      <img src="https://www.uniqlo.cn/cms/ae70496c8d3e7e510f422c7a8c54b860.png" alt="">
+    </div>
+    <div class="police2">
+      <img src="https://www.uniqlo.cn/public/image/L1/2020/special/lz2.jpg" alt="">
+    </div>
+  </div>
+  <script src="font/iconfont.js"></script>
+</body>
+
+</html>
