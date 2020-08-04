@@ -20,7 +20,8 @@ require(['jquery','lazyload'], function ($) {
         require([mod], function (modlist) {
            modlist.noticeBanner();
            modlist.goodsBanner();
-           modlist.render();
+           modlist.renderWomen();
+           modlist.renderMan();
         });
     }
 });
