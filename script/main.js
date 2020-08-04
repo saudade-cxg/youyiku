@@ -22,6 +22,7 @@ require(['jquery','lazyload'], function ($) {
            modlist.goodsBanner();
            modlist.renderWomen();
            modlist.renderMan();
+        //    modlist.renderList();
         });
     }
 });

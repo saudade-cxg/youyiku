@@ -146,8 +146,8 @@ define([], function () {
                 <img src="${value.color6}" alt="">
               </li>
             </ol>
-            <p class="type">【设计师合作款】女款<span class="size">${value.size}XL</span></p>
-            <p class="clothes">${value.title}</p>
+            <p class="type">${value.title1}<span class="size">${value.size}XL</span></p>
+            <p class="clothes">${value.title2}</p>
             <p class="price">${value.price}</p>
             <div class="star">
               <span class="iconfont icon-wujiaoxing"></span>
@@ -207,8 +207,8 @@ define([], function () {
                 <img src="${value.color6}" alt="">
               </li>
             </ol>
-            <p class="type">男款<span class="size">${value.size}XL</span></p>
-            <p class="clothes">${value.title}</p>
+            <p class="type">${value.title1}<span class="size">${value.size}XL</span></p>
+            <p class="clothes">${value.title2}</p>
             <p class="price">${value.price}</p>
             <div class="star">
               <span class="iconfont icon-wujiaoxing"></span>
