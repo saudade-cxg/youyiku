@@ -1,7 +1,8 @@
-define([], function() {
-    return {
-       renderList:function(){
-           
-       }
+define([], function () {
+  return {
+    // 列表页的渲染：
+    renderList: function () {
+
     }
+  }
 });

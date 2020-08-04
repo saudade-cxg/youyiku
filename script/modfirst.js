@@ -112,7 +112,7 @@ define([], function () {
     renderWomen: function () {
       let $goodsList = $('.type-clothes-women');
       $.ajax({
-        url: 'http://localhost/homework-JS/youyiku/php/youyiku.php',
+        url: 'http://localhost/homework-JS/youyiku/php/indexdata.php',
         dataType: 'json',
       }).done(function (data) {
         let strhtml = '<ul>';
@@ -173,7 +173,7 @@ define([], function () {
     renderMan: function () {
       let $goodsList = $('.type-clothes-man');
       $.ajax({
-        url: 'http://localhost/homework-JS/youyiku/php/youyiku.php',
+        url: 'http://localhost/homework-JS/youyiku/php/indexdata.php',
         dataType: 'json',
       }).done(function (data) {
         let strhtml = '<ul>';
