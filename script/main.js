@@ -27,9 +27,14 @@ require(['jquery', 'lazyload', 'jquery.pagination'], function ($) {
     });
   } else if (mod == 'modlist') {
     require([mod], function (modlist) {
-      // modlist.renderList();
-      // modlist.renderPage();
+      modlist.renderList();
+      modlist.renderPage();
       modlist.renderSort();
+    });
+  } else if (mod == 'moddetails') {
+    require([mod], function (modlist) {
+      modlist.renderDetails();
+      modlist.goodsNumber();
     });
   }
 });
