@@ -106,6 +106,67 @@ define([], function () {
           left: -$liWidth * index
         });
       };
+    },
+
+    // 渲染楼层列表：
+    render: function () {
+      let $goodsList = $('.type-clothes');
+      $.ajax({
+        url: 'http://localhost/homework-JS/youyiku/php/youyiku.php',
+        dataType: 'json',
+      }).done(function (data) {
+        let strhtml = '<ul>';
+        $.each(data, function (index, value) {
+          strhtml += `
+          <li>
+            <div class="logo">
+              <img src="https://www.uniqlo.cn/cms/c483b385090992775021ea8ec5de9d6a.jpg" alt="">
+            </div>
+            <div class="pic">
+              <a href="details.html">
+                <img data-original="${value.url}" class="lazy" width="212" height="222"/></a>
+            </div>
+            <ol>
+              <li>
+                <img src="${value.color1}" alt="">
+              </li>
+              <li>
+                <img src="${value.color2}" alt="">
+              </li>
+              <li>
+                <img src="${value.color3}" alt="">
+              </li>
+              <li>
+                <img src="${value.color4}" alt="">
+              </li>
+              <li>
+                <img src="${value.color5}" alt="">
+              </li>
+              <li>
+                <img src="${value.color6}" alt="">
+              </li>
+            </ol>
+            <p class="type">【设计师合作款】女款<span class="size">XS-XXL</span></p>
+            <p class="clothes">${value.title}</p>
+            <p class="price">${value.price}</p>
+            <div class="star">
+              <span class="iconfont icon-wujiaoxing"></span>
+              <span class="iconfont icon-wujiaoxing"></span>
+              <span class="iconfont icon-wujiaoxing"></span>
+              <span class="iconfont icon-wujiaoxing"></span>
+              <span class="iconfont icon-wujiaoxing"></span>
+              <span>(${value.sailnumber})</span>
+            </div>
+          </li>
+          `
+        });
+        strhtml += '</ul>';
+        $goodsList.html(strhtml);
+        // 添加懒加载：
+        $(function () {
+          $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+      });
     }
   }
 });

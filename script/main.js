@@ -1,10 +1,14 @@
 require.config({
     paths: {
-        'jquery': 'https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min'
+        'jquery': 'https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min',
+        'lazyload':'https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min'
+    },
+    shim:{
+        'lazyload':['jquery']
     }
 });
 
-require(['jquery'], function ($) {
+require(['jquery','lazyload'], function ($) {
     require(['public'],function(public){
         public.navSuspension();
         public.toTop();
@@ -16,6 +20,7 @@ require(['jquery'], function ($) {
         require([mod], function (modlist) {
            modlist.noticeBanner();
            modlist.goodsBanner();
+           modlist.render();
         });
     }
 });
