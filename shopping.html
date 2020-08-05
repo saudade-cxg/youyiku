@@ -1116,7 +1116,7 @@
         <div class="number">
           3
         </div>&nbsp;&nbsp;
-        <span>订单支付</span>
+        <p>订单支付</p>
       </li>
     </ul>
   </div>
@@ -1126,79 +1126,43 @@
     <p><span class="iconfont icon-gouwuche1"></span>购物车里空空如也，赶紧去<a href="first.html"> 逛逛吧 ></a></p>
   </div>
   <!-- 已添加购物车栏样式 -->
-  <div class="car">
-    <ul>
-      <table>
-        <tr class="column">
-          <td width="40"></td>
-          <td width="120">配送方式</td>
-          <td width="370" style="text-align: center">商品信息</td>
-          <td width="270">尺码/颜色</td>
-          <td width="120">价格</td>
-          <td width="120">数量</td>
-          <td width="120">小计</td>
-          <td width="120">操作</td>
-        </tr>
-        <tr class="express">
-          <td>
-            <input type="checkbox" id="input1">
-          </td>
-          <td colspan="8">
-            <span>快递配送</span>
-          </td>
-        </tr>
-        <tr class="shoplist">
-          <td>
-            <input type="checkbox" id="input2">
-          </td>
-          <td class="way">
-            <p class="color">修改配送方式</p>
-          </td>
-          <td class="info">
-            <img src="https://www.uniqlo.cn/hmall/test/u0000000015845/sku/80/COL30.jpg">
-            <a href="">
-              <p>女装 EZY弹力九分裤 430618</p>
-            </a>
-            <span>支持30天无理由退换货</span>
-          </td>
-          <td>
-            <p class="size">尺码：160/70A/L</p>
-            <p>颜色：30 浅米色</p>
-          </td>
-          <td>
-            <p class="size" style="color: red;">¥199.00</p>
-            <p class="color">初上市价格</p>
-            <p class="color">¥249.00</p>
-          </td>
-          <td>
-            <input type="text" value="1" id="input3">
-          </td>
-          <td>
-            <p class="size">¥199.00</p>
-          </td>
-          <td class="size">
-            <p>移入收藏夹</p>
-            <p>删除</p>
-            <p>查找相似<span class="iconfont icon-arrow"></span></p>
-          </td>
-        </tr>
-        <tr class="last">
-          <td colspan="9" height="1"></td>
-        </tr>
-      </table>
-    </ul>
+  <div class="car cartop">
+    <table>
+      <tr class="column">
+        <td width="40"></td>
+        <td width="120">配送方式</td>
+        <td width="370" style="text-align: center">商品信息</td>
+        <td width="270">尺码/颜色</td>
+        <td width="120">价格</td>
+        <td width="120">数量</td>
+        <td width="120">小计</td>
+        <td width="120">操作</td>
+      </tr>
+      <tr class="express">
+        <td>
+          <input type="checkbox" class="input1 singleselect allselect ">
+        </td>
+        <td colspan="8">
+          <span>快递配送</span>
+        </td>
+      </tr>
+    </table>
   </div>
+  <div class="car carlist">
+  </div>
+  <div class="carbottom"></div>
+
 
   <!-- 付钱结算栏 -->
   <div class="pay">
     <div class="left">
-      <input type="checkbox">
+      <input type="checkbox" class="singleselect allselect">
       <span>全选</span>
-      <span>删除</span>
+      <span class="alldel" style="cursor: pointer;">删除</span>
       <span>移入收藏夹</span>
     </div>
     <button>立即结算</button>
-    <p>总价（不含运费）：<span style="color: #FF0000;" class="">¥0.00</span></p>
+    <p>总价（不含运费）：<span style="color: #FF0000;font-weight: 700;" class="totalprice">¥0.00</span></p>
   </div>
 
 

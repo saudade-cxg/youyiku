@@ -70,7 +70,6 @@ define([], function () {
         prevContent: '上一页',
         nextContent: '下一页',
         callback: function (api) {
-          // console.log(api.getCurrent());
           $.ajax({
             url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
             data: {

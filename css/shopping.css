@@ -16,6 +16,12 @@ img {
   overflow: hidden;
 }
 
+button{
+  border: none;
+  outline: none;
+  background: white;
+  cursor: pointer;
+}
 html,
 body {
   width: 100%;
@@ -366,6 +372,7 @@ a {
   width: 1280px;
   height: 120px;
   margin: 0 auto;
+  display: block;
 }
 
 .nocar p {
@@ -394,19 +401,22 @@ table input {
   margin-left: 15px;
 }
 
-#input1 {
+.input1 {
   margin-top: -7px;
 }
 
-#input2 {
+.input2 {
   margin-top: -37px;
 }
 
-#input3 {
+
+.addnum{
+  width: 70px;
+  height: 22px;
+  display: flex;
+  justify-content: space-around;
   margin-top: -35px;
-  margin-left: 2px;
-  width: 20px;
-  text-align: center;
+  border: 1px solid #d4d4d4;
 }
 
 .car {
@@ -458,13 +468,24 @@ table input {
   font-weight: 700;
 }
 
+.size .del {
+  cursor: pointer;
+}
+
 .car .shoplist .color {
   color: #999999;
 }
 
-.car .last {
+.cartop {
+  display: none;
+}
+
+.carbottom {
+  width: 1280px;
   height: 8px;
+  margin: 0 auto;
   background: #F4F4F4;
+  display: none;
 }
 
 /* 付钱结算栏样式 */
@@ -474,6 +495,7 @@ table input {
   margin: 0 auto;
   line-height: 52px;
   box-shadow: 0 0 8px #aaa;
+  display: none;
 }
 
 .pay .left {

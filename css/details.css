@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+button{
+  outline: none;
+}
 img {
   width: 100%;
   height: 100%;
@@ -372,19 +374,36 @@ a {
 .wrap .center2 {
   width: 500px;
   height: 500px;
+  position: relative;
+}
+
+.wrap .center1 .smallbox {
+  width: 100px;
+  height: 100px;
+  visibility: hidden;
+  background: red;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: move;
 }
 
 .wrap .center2 {
-  display: none;
-  overflow: hidden;
+  visibility: hidden;
   position: absolute;
   top: 0;
-  right: 90px;
+  right: 65px;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .wrap .center2 img {
   width: 1000px;
   height: 1000px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .wrap .right {
@@ -517,6 +536,7 @@ a {
   height: 52px;
   border: 1px solid #FF0000;
   background: white;
+  cursor: pointer;
 }
 
 .wrap .right .share {

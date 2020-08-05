@@ -2,15 +2,17 @@ require.config({
   paths: {
     'jquery': 'https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min',
     'lazyload': 'https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min',
-    'pagination': 'http://localhost/homework-JS/youyiku/src/script/jquery.pagination.js'
+    'pagination': 'http://localhost/homework-JS/youyiku/src/script/jquery.pagination.js',
+    'cookie': 'https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie'
   },
   shim: {
     'lazyload': ['jquery'],
-    'jquery.pagination': ['jquery']
+    'jquery.pagination': ['jquery'],
+    'cookie': ['jquery']
   }
 });
 
-require(['jquery', 'lazyload', 'jquery.pagination'], function ($) {
+require(['jquery', 'lazyload', 'jquery.pagination', 'cookie'], function ($) {
   require(['public'], function (public) {
     public.navSuspension();
     public.toTop();
@@ -35,6 +37,12 @@ require(['jquery', 'lazyload', 'jquery.pagination'], function ($) {
     require([mod], function (modlist) {
       modlist.renderDetails();
       modlist.goodsNumber();
+      modlist.bigGlass();
+      modlist.shopping();
+    });
+  } else if (mod == 'modshopping') {
+    require([mod], function (modlist) {
+      modlist.shopping();
     });
   }
 });
