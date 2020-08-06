@@ -83,9 +83,13 @@ define([], function () {
               } else if ($top >= this.center1.height() - this.smallbox.height()) {
                 $top = this.center1.height() - this.smallbox.height()
               };
+              let $right = this.center1.width() - $left - this.smallbox.width();
+              let $bottom = this.center1.height() - $top - this.smallbox.height();
               this.smallbox.css({
-                left: $left,
-                top: $top
+                borderTopWidth: $top,
+                borderLeftWidth: $left,
+                borderRightWidth: $right,
+                borderBottomWidth: $bottom
               })
               this.bigpic.css({
                 left: -this.bili * $left,
@@ -115,7 +119,8 @@ define([], function () {
           arrnum = [];
         }
       }
-      $('.wrap .right .buy button').eq(1).on('click', function () {''
+      $('.wrap .right .buy button').eq(1).on('click', function () {
+        ''
         cookietoarray();
         if ($.inArray(sid, arrsid) === -1) {
           arrsid.push(sid);
@@ -130,9 +135,9 @@ define([], function () {
           });
         } else {
           arrnum[$.inArray(sid, arrsid)] = parseInt(arrnum[$.inArray(sid, arrsid)]) + parseInt($('#count').val());
-          $.cookie('cookienum',arrnum,{
-            expires:7,
-            path:'/'
+          $.cookie('cookienum', arrnum, {
+            expires: 7,
+            path: '/'
           });
         }
         alert('已将当前商品添加至购物车');

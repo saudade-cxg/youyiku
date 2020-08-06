@@ -16,6 +16,7 @@ define([], function () {
           },
           success: function (data) {
             if (data) {
+              console.log(data);
               location.href = 'first.html';
               localStorage.setItem('xingming', $username.value);
             } else {
