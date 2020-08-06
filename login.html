@@ -7,6 +7,7 @@
   <title>用户登录</title>
   <link rel="stylesheet" href="font/iconfont.css">
   <link rel="stylesheet" href="css/login.css">
+  <script src="script/sha1.js"></script>
   <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage"
     currentmod="modlogin"></script>
   <!-- <span class="iconfont icon-xxx"></span> -->
@@ -1108,18 +1109,18 @@
       <form action="" method="post" class="login">
         <p>用户名*</p>
         <div class="line">
-          <input type="text" name="username" placeholder="用户名">
+          <input type="text" name="username" placeholder="用户名" class="username">
         </div>
         <p>手机号*</p>
         <div class="line">
-          <input type="text" name="number" placeholder="手机号">
+          <input type="text" name="iphone" placeholder="手机号" class="iphone">
         </div>
         <p>用户密码*</p>
         <div class="line">
-          <input type="password" name="password" placeholder="密码">
+          <input type="password" name="password" placeholder="密码" class="password">
         </div>
         <br>
-        <button type="submit">登录</button>
+        <input type="button" value="登录" class="btn">
       </form>
       <fieldset>
         <legend>第三方账号登录</legend>

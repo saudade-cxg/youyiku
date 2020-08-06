@@ -44,5 +44,14 @@ require(['jquery', 'lazyload', 'jquery.pagination', 'cookie'], function ($) {
     require([mod], function (modlist) {
       modlist.shopping();
     });
+  } else if (mod == 'modregistry') {
+    require([mod], function (modlist) {
+      modlist.sameName();
+      modlist.regexp();
+    });
+  } else if (mod == 'modlogin') {
+    require([mod], function (modlist) {
+      modlist.loginSuccess();
+    });
   }
 });

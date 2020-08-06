@@ -1099,23 +1099,27 @@
   <div class="user">
     <p>新用户注册</p>
   </div>
-  <form action="" method="post" class="login">
+  <form action="http://localhost/homework-JS/youyiku/php/registry.php" method="post" class="login">
     <p>用户名*</p>
     <div class="line">
-      <input type="text" name="username" placeholder="用户名">
+      <input type="text" name="username" placeholder="用户名" class="username">
     </div>
+    <span class="error"></span>
     <p>手机号*</p>
     <div class="line">
-      <input type="text" name="number" placeholder="手机号">
+      <input type="text" name="iphone" placeholder="手机号" class="iphone">
     </div>
+    <span class="error"></span>
     <p>用户密码*</p>
     <div class="line">
-      <input type="password" name="password" placeholder="密码">
+      <input type="password" name="password" placeholder="密码" class="password">
     </div>
+    <span class="error"></span>
     <br>
-    <input type="radio"> <span>我已阅读并同意<a href="javascript:;">《优衣库会员注册协议》</a>和<a href="javascript:;">《优衣库隐私注册》</a></span>
     <br>
-    <button type="submit">注册</button>
+    <input type="checkbox" class="select"> <span>我已阅读并同意<a href="javascript:;">《优衣库会员注册协议》</a>和<a href="javascript:;">《优衣库隐私注册》</a></span>
+    <br>
+    <button type="submit" name="submit">注册</button>
   </form>
 
   <!-- 底部栏 -->

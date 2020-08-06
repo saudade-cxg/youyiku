@@ -418,13 +418,15 @@ a {
   color: #2F7E93;
 }
 
-.login button {
+.login .btn {
+  display: inline-block;
   width: 100%;
   height: 52px;
   margin-top: 20px;
   color: white;
   background: #DADADA;
   border: none;
+  cursor: pointer;
 }
 
 .middle fieldset {
