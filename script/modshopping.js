@@ -68,7 +68,7 @@ define([], function () {
                     
                   </td>
                   <td width="120">
-                    <p class="size singleprice">¥${value.price * num}</p>
+                    <p class="size singleprice" style="color:#FF0000">¥${value.price * num}.00</p>
                   </td>
                   <td class="size" width="120">
                     <p>移入收藏夹</p>
@@ -84,12 +84,19 @@ define([], function () {
           let $del = $('.size .del');
           let $all = $('.allselect');
           let $inputs = $('.singleselect').not('.allselect');
-          let $totalprice = $('.totalprice');
           let $singleprice = $('.singleprice');
-          let sum = 0;
+          let $totalprice = $('.totalprice');
+          let $buybtn = $('.pay button');
           // 点击删除，删除当前商品
           $del.on('click', function () {
-            $(this).parent().parent().parent().remove();
+            $(this).parent().parent().parent().parent().remove();
+            let $table = $('.carlist table');
+            if ($table.length == 0) {
+              $('.nocar').css('display', 'block');
+              $('.cartop').css('display', 'none');
+              $('.carbottom').css('display', 'none');
+              $('.pay').css('display', 'none');
+            }
           });
           // 全选按钮，所有商品按钮被选中或不被选中
           $all.on('click', function () {
@@ -104,6 +111,7 @@ define([], function () {
               $('.carbottom').css('display', 'none');
               $('.pay').css('display', 'none');
             })
+            allprice();
           });
           // 全选按钮，若所有商品全被选中，则全选按钮选中
           $inputs.on('click', function () {
@@ -112,17 +120,24 @@ define([], function () {
             } else {
               $all.prop('checked', false);
             }
-            // if ($inputs.prop('checked')) {
-            //   sum += parseFloat($singleprice.eq($(this).index()).html().substring(1));
-            //   $totalprice.html('¥' + sum);
-            // }
+            allprice();
           });
-          // 选择商品，计算总价：
-          $inputs.on('click', function () {
-            sum += parseFloat($singleprice.eq($(this).index()).html().substring(1));
-            $totalprice.html('¥' + sum);
-          });
-        })
+          // 计算总价：
+          function allprice() {
+            var sum = 0;
+            $inputs.each(function () {
+              if ($(this).is(':checked')) {
+                sum += parseFloat($($(this).parent().next().next().next().next().next().next().children()[0]).html().substring(1));
+              }
+            });
+            $totalprice.html('¥' + sum.toFixed(2));
+            if ($totalprice.html().substring(1) > 0) {
+              $buybtn.css('background', '#FF0000');
+            } else {
+              $buybtn.css('background', '#DADADA');
+            };
+          };
+        });
       }
     }
   }
