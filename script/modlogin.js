@@ -9,7 +9,7 @@ define([], function () {
       $btn.on('click', function () {
         $.ajax({
           type: 'post',
-          url: 'http://localhost/homework-JS/youyiku/php/login.php',
+          url: 'http://10.31.163.14/homework-JS/youyiku/php/login.php',
           data: {
             user: $username.val(),
             iphone: $iphone.val(),
@@ -17,7 +17,7 @@ define([], function () {
           },
           success: function (data) {
             if (data) {
-              location.href = 'first.html';
+              location.href = 'index.html';
               localStorage.setItem('xingming', $username.value);
             } else {
               alert('用户名或者密码错误');

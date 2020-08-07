@@ -4,7 +4,7 @@ define([], function () {
     renderList: function () {
       let $goodsList = $('.wrap')
       $.ajax({
-        url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
+        url: 'http://10.31.163.14/homework-JS/youyiku/php/listdata.php',
         dataType: 'json'
       }).done(function (data) {
         let strhtml = '<ul>';
@@ -71,7 +71,7 @@ define([], function () {
         nextContent: '下一页',
         callback: function (api) {
           $.ajax({
-            url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
+            url: 'http://10.31.163.14/homework-JS/youyiku/php/listdata.php',
             data: {
               page: api.getCurrent()
             },
@@ -142,7 +142,7 @@ define([], function () {
       let $btn = $('.rank button');
       let $goodsList = $('.wrap')
       $.ajax({
-        url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
+        url: 'http://10.31.163.14/homework-JS/youyiku/php/listdata.php',
         dataType: 'json'
       }).done(function (data) {
         let strhtml = '<ul>';
@@ -215,7 +215,7 @@ define([], function () {
         callback: function (api) {
           // console.log(api.getCurrent());
           $.ajax({
-            url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
+            url: 'http://10.31.163.14/homework-JS/youyiku/php/listdata.php',
             data: {
               page: api.getCurrent()
             },

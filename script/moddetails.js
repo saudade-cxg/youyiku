@@ -5,7 +5,7 @@ define([], function () {
       let sid = location.search.substring(1).split('=')[1];
       $.ajax({
         type: 'get',
-        url: 'http://localhost/homework-JS/youyiku/php/getsid.php',
+        url: 'http://10.31.163.14/homework-JS/youyiku/php/getsid.php',
         data: {
           sid: sid
         },
@@ -100,6 +100,12 @@ define([], function () {
           }, () => {
             this.smallbox.css('visibility', 'hidden');
             this.bigbox.css('visibility', 'hidden');
+            this.smallbox.css({
+              borderTopWidth: 0,
+              borderLeftWidth: 0,
+              borderRightWidth: 0,
+              borderBottomWidth: 0
+            })
           })
         }
       }

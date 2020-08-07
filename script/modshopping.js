@@ -24,7 +24,7 @@ define([], function () {
       // 商品存在，获取数据，渲染购物车列表
       function rendercart(sid, num) {
         $.ajax({
-          url: 'http://localhost/homework-JS/youyiku/php/listdata.php',
+          url: 'http://10.31.163.14/homework-JS/youyiku/php/listdata.php',
           data: {
             sid: sid,
             num: num
