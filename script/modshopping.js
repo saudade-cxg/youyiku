@@ -2,7 +2,7 @@ define([], function () {
   return {
     // 购物车的渲染：
     shopping: function () {
-      // 先获取cookie
+      // 获取cookie
       if ($.cookie('cookiesid') && $.cookie('cookienum')) {
         // 商品若存在，显示购物车列表
         $('.nocar').css('display', 'none');

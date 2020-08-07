@@ -1,5 +1,6 @@
 define([], function () {
   return {
+    // 登录验证数据库匹配：
     loginSuccess: function () {
       let $username = $('.username');
       let $iphone = $('.iphone');
@@ -16,7 +17,6 @@ define([], function () {
           },
           success: function (data) {
             if (data) {
-              console.log(data);
               location.href = 'first.html';
               localStorage.setItem('xingming', $username.value);
             } else {

@@ -14,8 +14,7 @@ define([], function () {
       // 1.验证用户名：
       //中英文均可，最长14个字符或者7个汉字([\u4e00-\u9fa5])
       $username.on('focus', function () {
-        $error.eq(0).html('中英文均可，最长14个字符或者7个汉字');
-        $error.eq(0).css('color', '#D3D3D3');
+        $error.eq(0).html('中英文均可，最长14个字符或者7个汉字').css('color', '#D3D3D3');
       });
       $username.on('blur', function () {
         if ($(this).val() !== '') {
@@ -24,46 +23,38 @@ define([], function () {
           let $reg = /^[a-zA-Z\u4e00-\u9fa5]+$/g;
           if ($strlen <= 14) {
             if ($reg.test($(this).val())) {
-              $error.eq(0).html('√');
-              $error.eq(0).css('color', 'green');
+              $error.eq(0).html('√').css('color', 'green');
               $usernameflag = true;
             } else {
-              $error.eq(0).html('X 您输入的用户名格式有误，请重新输入');
-              $error.eq(0).css('color', 'red');
+              $error.eq(0).html('X 您输入的用户名格式有误，请重新输入').css('color', 'red');
               $usernameflag = false;
             }
           } else {
-            $error.eq(0).html('X 您输入的用户名格式有误，请重新输入');
-            $error.eq(0).css('color', 'red');
+            $error.eq(0).html('X 您输入的用户名格式有误，请重新输入').css('color', 'red');
             $usernameflag = false;
           }
         } else {
-          $error.eq(0).html('X 用户名不能为空，请输入');
-          $error.eq(0).css('color', 'red');
+          $error.eq(0).html('X 用户名不能为空，请输入').css('color', 'red');
           $usernameflag = false;
         }
       });
 
       // 2.验证手机号码：
       $iphone.on('focus', function () {
-        $error.eq(1).html('请输入11位手机号码');
-        $error.eq(1).css('color', '#d4d4d4');
+        $error.eq(1).html('请输入11位手机号码').css('color', '#d4d4d4');
       });
       $iphone.on('blur', function () {
         if ($(this).val() !== '') {
           let $reg = /^1[3578]\d{9}$/;
           if ($reg.test($(this).val())) {
-            $error.eq(1).html('√');
-            $error.eq(1).css('color', 'green');
+            $error.eq(1).html('√').css('color', 'green');
             $iphoneflag = true;
           } else {
-            $error.eq(1).html('X 您输入的手机号码格式有误，请重新输入');
-            $error.eq(1).css('color', 'red');
+            $error.eq(1).html('X 您输入的手机号码格式有误，请重新输入').css('color', 'red');
             $iphoneflag = false;
           }
         } else {
-          $error.eq(1).html('X 手机号码不能为空，请输入');
-          $error.eq(1).css('color', 'red');
+          $error.eq(1).html('X 手机号码不能为空，请输入').css('color', 'red');
           $iphoneflag = false;
         }
       });
@@ -74,8 +65,7 @@ define([], function () {
       // 中：二种或者三种字符。
       // 强：四种字符。
       $password.on('focus', function () {
-        $error.eq(2).html('请输入密码(字母数字特殊字符，长度6~12之间)');
-        $error.eq(2).css('color', '#d4d4d4');
+        $error.eq(2).html('请输入密码(字母数字特殊字符，长度6~12之间)').css('color', '#d4d4d4');
       });
       $password.on('input', function () {
         if ($(this).val().length >= 6 && $(this).val().length <= 12) {
@@ -98,55 +88,46 @@ define([], function () {
           };
           switch ($count) {
             case 1:
-              $error.eq(2).html('密码强度为弱');
-              $error.eq(2).css('color', 'red');
+              $error.eq(2).html('密码强度为弱').css('color', 'red');
               $passwordflag = false;
               break;
             case 2:
             case 3:
-              $error.eq(2).html('密码强度为中');
-              $error.eq(2).css('color', 'orange');
+              $error.eq(2).html('密码强度为中').css('color', 'orange');
               $passwordflag = true;
               break;
             case 4:
-              $error.eq(2).html('密码强度为强');
-              $error.eq(2).css('color', 'green');
+              $error.eq(2).html('密码强度为强').css('color', 'green');
               $passwordflag = true;
               break;
           }
         } else {
-          $error.eq(2).html('X 您输入的密码长度有误，请重新输入');
-          $error.eq(2).css('color', 'red');
+          $error.eq(2).html('X 您输入的密码长度有误，请重新输入').css('color', 'red');
           $passwordflag = false;
         }
       });
       $password.on('blur', function () {
         if ($(this).val() !== '') {
           if ($passwordflag) {
-            $error.eq(2).html('√');
-            $error.eq(2).css('color', 'green');
+            $error.eq(2).html('√').css('color', 'green');
           }
         } else {
-          $error.eq(2).html('X 手机号码不能为空，请输入');
-          $error.eq(2).css('color', 'red');
+          $error.eq(2).html('X 手机号码不能为空，请输入').css('color', 'red');
           $passwordflag = false;
         }
       });
 
       $form.on('submit', function () {
         if ($username.val() === '') {
-          $error.eq(0).html('X 用户名不能为空，请输入');
-          $error.eq(0).css('color', 'red');
+          $error.eq(0).html('X 用户名不能为空，请输入').css('color', 'red');
           $usernameflag = false;
         };
         if ($iphone.val() === '') {
-          $error.eq(1).html('X 手机号码不能为空，请输入');
-          $error.eq(1).css('color', 'red');
+          $error.eq(1).html('X 手机号码不能为空，请输入').css('color', 'red');
           $iphoneflag = false;
         };
         if ($username.val() === '') {
-          $error.eq(2).html('X 密码不能为空，请输入');
-          $error.eq(2).css('color', 'red');
+          $error.eq(2).html('X 密码不能为空，请输入').css('color', 'red');
           $passwordflag = false;
         };
         if (!$usernameflag || !$iphoneflag || !$passwordflag) {
@@ -179,19 +160,16 @@ define([], function () {
             },
             success: function (data) {
               if (data) {
-                $error.eq(0).html('X 该用户名已存在');
-                $error.eq(0).css('color', 'red');
+                $error.eq(0).html('X 该用户名已存在').css('color', 'red');
                 $userlock = false;
               } else {
-                $error.eq(0).html('√');
-                $error.eq(0).css('color', 'green');
+                $error.eq(0).html('√').css('color', 'green');
                 $userlock = true;
               }
             }
           })
         } else {
-          $error.eq(0).html('X 用户名不能为空，请输入');
-          $error.eq(0).css('color', 'red');
+          $error.eq(0).html('X 用户名不能为空，请输入').css('color', 'red');
         }
       });
       $form.on('submit', function () {

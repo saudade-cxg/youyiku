@@ -85,6 +85,7 @@ define([], function () {
               };
               let $right = this.center1.width() - $left - this.smallbox.width();
               let $bottom = this.center1.height() - $top - this.smallbox.height();
+              // 放大镜背景透明覆盖边框：
               this.smallbox.css({
                 borderTopWidth: $top,
                 borderLeftWidth: $left,
@@ -120,7 +121,6 @@ define([], function () {
         }
       }
       $('.wrap .right .buy button').eq(1).on('click', function () {
-        ''
         cookietoarray();
         if ($.inArray(sid, arrsid) === -1) {
           arrsid.push(sid);
